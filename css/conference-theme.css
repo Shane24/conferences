@@ -2,6 +2,11 @@
  *** 1. Bootstrap theme SCSS ***
  *** 2. Our custom styles ***
 */
+
+body {
+  font-size: 21px;
+}
+
 .btn-default,
 .btn-primary,
 .btn-success,
