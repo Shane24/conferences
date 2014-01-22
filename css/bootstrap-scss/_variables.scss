@@ -49,16 +49,39 @@ $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Menlo, Monaco, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
 
-$font-size-base:          14px !default;
-$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~18px
-$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-base:          15px !default;
 
-$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~36px
-$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~30px
-$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~24px
-$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~18px
+////////// Steph says not a big fan of the scale or variables used below, trying out a custom solution instead ////////// 
+
+$font-size-large:         ceil(($font-size-base * 1.25)) !default; // ~xxpx
+$font-size-small:         ceil(($font-size-base * 0.85)) !default; // ~xxpx
+
+$font-size-h1:            floor(($font-size-base * 2.6)) !default; // ~xxpx
+$font-size-h2:            floor(($font-size-base * 2.15)) !default; // ~xxpx
+$font-size-h3:            ceil(($font-size-base * 1.7)) !default; // ~xxpx
+$font-size-h4:            ceil(($font-size-base * 1.25)) !default; // ~xxpx
 $font-size-h5:            $font-size-base !default;
-$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~12px
+$font-size-h6:            ceil(($font-size-base * 0.85)) !default; // ~xxpx
+
+////////// Custom typographic scale mixins added by Steph //////////
+
+/*  Modular Scale of Typography
+    ----------------------
+    15px @ 1:1.2
+    Example usage:   h1 { font-size: $font-size-base * $scale-x3; } 
+    This translates to 15px * 1.728 = 25.92px
+    To round up:     h1 { font-size: ceil(($font-size-base * $scale-x3)) } 
+    ----------------------
+*/
+
+$scale-x1: 1.2;
+$scale-x2: 1.44;
+$scale-x3: 1.728;
+$scale-x4: 2.074;
+$scale-x5: 2.488;
+$scale-x6: 2.986;
+
+///////// end custom //////////
 
 //** Unit-less `line-height` for use in components like buttons.
 $line-height-base:        1.428571429 !default; // 20/14

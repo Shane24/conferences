@@ -1,7 +1,11 @@
 /*
+ *** Compiled from bootstrap-scss/conference-theme.scss
+
+ *** Structure:
  *** 1. Bootstrap theme SCSS ***
  *** 2. Our custom styles ***
 */
+
 
 // 1. Bootstrap theme SCSS
 //
@@ -256,6 +260,15 @@
 main {
     
     section {
-        dl {}
+    
+        h2 {
+            font-size: ceil(($font-size-base * $scale-x3));
+        }
+    
+        dl {
+            
+            font-size: ceil(($font-size-base * $scale-x1));
+            
+        }
     }
 }
