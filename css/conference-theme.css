@@ -1,12 +1,18 @@
 /*
+ *** Compiled from bootstrap-scss/conference-theme.scss
+
+ *** Structure:
  *** 1. Bootstrap theme SCSS ***
  *** 2. Our custom styles ***
 */
-
-body {
-  font-size: 21px;
-}
-
+/*  Modular Scale of Typography
+    ----------------------
+    15px @ 1:1.2
+    Example usage:   h1 { font-size: $font-size-base * $scale-x3; } 
+    This translates to 15px * 1.728 = 25.92px
+    To round up:     h1 { font-size: ceil(($font-size-base * $scale-x3)) } 
+    ----------------------
+*/
 .btn-default,
 .btn-primary,
 .btn-success,
@@ -322,3 +328,8 @@ body {
   border-color: gainsboro;
   -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1); }
+
+main section h2 {
+  font-size: 26px; }
+main section dl {
+  font-size: 18px; }
