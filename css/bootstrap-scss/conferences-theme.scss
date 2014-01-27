@@ -257,18 +257,80 @@
 
 // 2. Our custom styles
 
+body {
+    padding-top: 70px; //navbar
+}
+
+header.navbar {
+
+    background: #fff;
+    background-image: none;
+    border: 0px;
+    
+    .navbar-brand {
+        font-family: $cursive-font;
+        font-size: $font-size-base * $scale-x2;
+        padding: 1em;
+    }
+    
+    .navbar-nav {
+        
+        li {
+            font-family: $cursive-font;
+            font-size: $font-size-base * $scale-x2;
+            
+            a {
+                text-shadow: none;
+                padding: 1em;
+            }
+        }
+    }
+    
+}
+
 main {
     
-    section {
+    .month {
     
+        @include clearfix;
+        
         h2 {
             font-size: ceil(($font-size-base * $scale-x3));
+            font-family: $cursive-font;
+            display: block;
+            width: 25%;
+            float: left;
         }
-    
-        dl {
+        
+        .conferences {
+        
+            &:before {
+                background: $navy;
+                bottom: 0;
+                content: "";
+                left: 20%;
+                margin-left: -10px;
+                position: absolute;
+                top: 0;
+                width: 10px;
+            }
+        
+            display: table;
+            float: left;
+            width: 75%;
+        
+            .conference {
             
-            font-size: ceil(($font-size-base * $scale-x1));
-            
+                width: 33%;
+                float: left;
+                padding: 1em;
+                box-sizing: border-box;
+               
+                h3 {
+                    font-size: ceil(($font-size-base * $scale-x1));
+                }
+        
+            } 
         }
     }
 }
