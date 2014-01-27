@@ -11,18 +11,19 @@
 @import "type";
 @import "code";
 @import "grid";
-@import "tables";
+//@import "tables";
 @import "forms";
 @import "buttons";
 
 // Components
 @import "component-animations";
-@import "glyphicons";
+//@import "glyphicons";
 @import "dropdowns";
 @import "button-groups";
 @import "input-groups";
 @import "navs";
 @import "navbar";
+/*
 @import "breadcrumbs";
 @import "pagination";
 @import "pager";
@@ -35,14 +36,17 @@
 @import "media";
 @import "list-group";
 @import "panels";
-@import "wells";
+@import "wells"; 
 @import "close";
+*/
 
 // Components w/ JavaScript
+/*
 @import "modals";
 @import "tooltip";
 @import "popovers";
 @import "carousel";
+*/
 
 // Utility classes
 @import "utilities";
