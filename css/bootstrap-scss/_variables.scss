@@ -25,8 +25,10 @@ $brand-danger:          #d9534f !default;
 
 // Steph's custom colours
 
-$navy:  #232C33 !default;
-
+$offwhite:  #f3f2e6 !default;
+$yellow:    #ead704 !default;
+$pink:      #ed145b !default;
+$green:     #72c59b !default;
 
 //== Scaffolding
 //
@@ -35,12 +37,12 @@ $navy:  #232C33 !default;
 //** Background color for `<body>`.
 $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            #f3f2e6 !default;
 
 //** Global textual link color.
-$link-color:            $brand-primary !default;
+$link-color:            $yellow !default;
 //** Link hover color set via `darken()` function.
-$link-hover-color:      darken($link-color, 15%) !default;
+$link-hover-color:      $pink !default;
 
 
 //== Typography
@@ -58,6 +60,7 @@ $font-family-base:        $font-family-sans-serif !default;
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,700italic,900italic");
 
 $fancy-font:              'Lato', sans-serif;
+$league-gothic:           "league-gothic", sans-serif;
 $cursive-font:            'Chalkboard', 'Chalkboard SE', 'Comic Sans', 'Comic Sans MS', cursive;
 
 //////////
