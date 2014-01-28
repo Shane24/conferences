@@ -1,5 +1,5 @@
 /*
- *** Compiled from bootstrap-scss/conference-theme.scss
+ *** Compiled from bootstrap-scss/conferences-theme.scss
 
  *** Structure:
  *** 1. Bootstrap theme SCSS ***
@@ -146,114 +146,20 @@
 } */
 
 
-
-//
-// Alerts
-// --------------------------------------------------
-
-// Common styles
-.alert {
-  text-shadow: 0 1px 0 rgba(255,255,255,.2);
-  $shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 1px 2px rgba(0,0,0,.05);
-  @include box-shadow($shadow);
-}
-
-// Mixin for generating new styles
-@mixin alert-styles($color) {
-  @include gradient-vertical($start-color: $color, $end-color: darken($color, 7.5%));
-  border-color: darken($color, 15%);
-}
-
-// Apply the mixin to the alerts
-.alert-success    { @include alert-styles($alert-success-bg); }
-.alert-info       { @include alert-styles($alert-info-bg); }
-.alert-warning    { @include alert-styles($alert-warning-bg); }
-.alert-danger     { @include alert-styles($alert-danger-bg); }
-
-
-
-//
-// Progress bars
-// --------------------------------------------------
-
-// Give the progress background some depth
-.progress {
-  @include gradient-vertical($start-color: darken($progress-bg, 4%), $end-color: $progress-bg)
-}
-
-// Mixin for generating new styles
-@mixin progress-bar-styles($color) {
-  @include gradient-vertical($start-color: $color, $end-color: darken($color, 10%));
-}
-
-// Apply the mixin to the progress bars
-.progress-bar            { @include progress-bar-styles($progress-bar-bg); }
-.progress-bar-success    { @include progress-bar-styles($progress-bar-success-bg); }
-.progress-bar-info       { @include progress-bar-styles($progress-bar-info-bg); }
-.progress-bar-warning    { @include progress-bar-styles($progress-bar-warning-bg); }
-.progress-bar-danger     { @include progress-bar-styles($progress-bar-danger-bg); }
-
-
-
-//
-// List groups
-// --------------------------------------------------
-
-.list-group {
-  border-radius: $border-radius-base;
-  @include box-shadow(0 1px 2px rgba(0,0,0,.075));
-}
-.list-group-item.active,
-.list-group-item.active:hover,
-.list-group-item.active:focus {
-  text-shadow: 0 -1px 0 darken($list-group-active-bg, 10%);
-  @include gradient-vertical($start-color: $list-group-active-bg, $end-color: darken($list-group-active-bg, 7.5%));
-  border-color: darken($list-group-active-border, 7.5%);
-}
-
-
-
-//
-// Panels
-// --------------------------------------------------
-
-// Common styles
-.panel {
-  @include box-shadow(0 1px 2px rgba(0,0,0,.05));
-}
-
-// Mixin for generating new styles
-@mixin panel-heading-styles($color) {
-  @include gradient-vertical($start-color: $color, $end-color: darken($color, 5%));
-}
-
-// Apply the mixin to the panel headings only
-.panel-default > .panel-heading   { @include panel-heading-styles($panel-default-heading-bg); }
-.panel-primary > .panel-heading   { @include panel-heading-styles($panel-primary-heading-bg); }
-.panel-success > .panel-heading   { @include panel-heading-styles($panel-success-heading-bg); }
-.panel-info > .panel-heading      { @include panel-heading-styles($panel-info-heading-bg); }
-.panel-warning > .panel-heading   { @include panel-heading-styles($panel-warning-heading-bg); }
-.panel-danger > .panel-heading    { @include panel-heading-styles($panel-danger-heading-bg); }
-
-
-
-//
-// Wells
-// --------------------------------------------------
-
-.well {
-  @include gradient-vertical($start-color: darken($well-bg, 5%), $end-color: $well-bg);
-  border-color: darken($well-bg, 10%);
-  $shadow: inset 0 1px 3px rgba(0,0,0,.05), 0 1px 0 rgba(255,255,255,.1);
-  @include box-shadow($shadow);
-}
-
 // 2. Our custom styles
 
-body {
-    padding-top: 70px; //navbar
+@mixin animate-everything {
+ -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
+body {
+    background: transparent url("../img/asphalt.jpg") repeat 0 0;
+}
+
+/* hiding this for now as we might want it again if the other thing is a pain in the ass
 header.navbar {
 
     background: #fff;
@@ -277,42 +183,81 @@ header.navbar {
             }
         }
     }
-    
-}
+}*/
 
 main {
+
+    position: relative;
+
+        // yellow lines
+        
+        &:before {
+            background: $yellow;
+            bottom: 0;
+            content: "";
+            right: 5px;
+            //margin-right: -10px;
+            position: absolute;
+            top: 0;
+            width: 15px;
+            opacity: 0.7;
+        }
+        
+        &:after {
+            background: $yellow;
+            bottom: 0;
+            content: "";
+            right: 40px;
+            //margin-right: -10px;
+            position: absolute;
+            top: 0;
+            width: 15px;
+            opacity: 0.7;
+        }
+
     
     .month {
     
         @include clearfix;
+        display: block;
+        padding: 2em 0;
+        opacity: 0.7;
+        @include animate-everything;
+        
+        &:hover {
+            opacity: 1;
+        }
         
         h2 {
-            font-size: ceil(($font-size-base * $scale-x3));
-            font-family: $cursive-font;
+            font-size: ceil(($font-size-base * $scale-x6));
+            font-family: $league-gothic;
+            font-weight: 400;
+            text-transform: uppercase;
             display: block;
-            width: 25%;
+            width: 38%;
             float: left;
+            color: $offwhite;
+            padding: 0.25em 0;
         }
         
         .conferences {
         
+            //white line
             &:before {
-                background: $navy;
+                background: #f3f2e6;
                 bottom: 0;
                 content: "";
-                left: 20%;
-                margin-left: -10px;
+                left: 24%;
                 position: absolute;
                 top: 0;
-                width: 10px;
+                width: 15px;
+                opacity: 0.5;
             }
-        
-            display: table;
-            float: left;
-            width: 75%;
-        
-            .conference {
             
+            float: left;
+            width: 62%;
+            
+            .conference {
                 width: 33%;
                 float: left;
                 padding: 1em;
@@ -320,25 +265,43 @@ main {
                
                 h3 {
                     font-size: ceil(($font-size-base * $scale-x1));
+                    color: $yellow;
+                    
+                    a {
+                        text-decoration: none;
+                    }
                 }
-        
+                
+                ul {
+                    margin: 0;
+                    padding: 0; 
+                    
+                    li {
+                        list-style: none;
+                        list-style-position: outside;
+                    }
+                }
             } 
         }
     }
 }
 
 .cbp-af-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: #7C7C7C;
-  z-index: 10000;
-  height: 230px;
-  overflow: hidden;
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  transition: height 0.3s;
+    //display: none;
+    position: fixed;
+    left: 0;    
+    width: 100%;
+    background: #000;
+    border-radius: 4px;
+    z-index: 10000;
+    height: 160px;
+    overflow: hidden;
+    -webkit-box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow:    1px 0px 10px 10px rgba(0, 0, 0, 0.75);
+    box-shadow:         1px 0px 10px 10px rgba(0, 0, 0, 0.75);  
+    -webkit-transition: height 0.3s;
+    -moz-transition: height 0.3s;
+    transition: height 0.3s;
 }
 
 .cbp-af-header .cbp-af-inner {
@@ -350,30 +313,25 @@ main {
 
 
  /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
-.cbp-af-header h1,
-.cbp-af-header nav a {
-  line-height: 230px;
-}
-
 .cbp-af-header h1 {
-  text-transform: uppercase;
-  color: #333;
-  letter-spacing: 4px;
-  font-size: 20px;
-  margin: 0;
-  float: left;
+    font-family: $cursive-font;
+    font-size: $font-size-base * $scale-x4;
+    color: $pink;
+    margin: 0;
+    text-align: center;
+    padding: 1em 0;
 }
 
+.cbp-af-header nav {
+    text-align: center;
 
-.cbp-af-header nav a {
-  color: #fff;
-  font-weight: 700;
-  margin: 0 0 0 20px;
-  font-size: 1.4em;
-}
-
-.cbp-af-header nav a:hover {
-  color: #333;
+    a {
+        font-size: $font-size-base * $scale-x1;
+        font-family: $cursive-font;
+        color: $green;
+        text-align: center;
+        margin: 0 1em;
+    }
 }
 
 /* Transitions and class for reduced height */
@@ -385,16 +343,11 @@ main {
 }
 
 .cbp-af-header.cbp-af-header-shrink {
-  height: 90px;
-}
-
-.cbp-af-header.cbp-af-header-shrink h1,
-.cbp-af-header.cbp-af-header-shrink nav a {
-  line-height: 90px;
+  height: 100px;
 }
 
 .cbp-af-header.cbp-af-header-shrink h1 {
-  font-size: 20px;
+  font-size: $font-size-base * $scale-x1;
 }
 
 /* Example Media Queries */
@@ -412,14 +365,6 @@ main {
     float: none;
   }
 
-  .cbp-af-header h1,
-  .cbp-af-header nav a {
-    line-height: 80px;
-  }
-
-  .cbp-af-header nav a {
-    margin: 0 10px;
-  }
 
   .cbp-af-header.cbp-af-header-shrink h1,
   .cbp-af-header.cbp-af-header-shrink nav a {
@@ -446,9 +391,4 @@ main {
   .cbp-af-header.cbp-af-header-shrink nav a {
     line-height: 35px;
   }
-}
-
-
-main {
-  margin-top: 160px;
 }
