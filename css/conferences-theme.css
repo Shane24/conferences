@@ -1,6 +1,6 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700,900,700italic,900italic");
 /*
- *** Compiled from bootstrap-scss/conference-theme.scss
+ *** Compiled from bootstrap-scss/conferences-theme.scss
 
  *** Structure:
  *** 1. Bootstrap theme SCSS ***
@@ -14,7 +14,6 @@
     To round up:     h1 { font-size: ceil(($font-size-base * $scale-x3)) } 
     ----------------------
 */
-/* line 30, bootstrap-scss/conferences-theme.scss */
 .btn-default,
 .btn-primary,
 .btn-success,
@@ -23,53 +22,41 @@
 .btn-danger {
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
-}
-/* line 37, bootstrap-scss/conferences-theme.scss */
-.btn-default:active, .btn-default.active,
-.btn-primary:active,
-.btn-primary.active,
-.btn-success:active,
-.btn-success.active,
-.btn-info:active,
-.btn-info.active,
-.btn-warning:active,
-.btn-warning.active,
-.btn-danger:active,
-.btn-danger.active {
-  -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-}
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075); }
+  .btn-default:active, .btn-default.active,
+  .btn-primary:active,
+  .btn-primary.active,
+  .btn-success:active,
+  .btn-success.active,
+  .btn-info:active,
+  .btn-info.active,
+  .btn-warning:active,
+  .btn-warning.active,
+  .btn-danger:active,
+  .btn-danger.active {
+    -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
 
-/* line 66, bootstrap-scss/conferences-theme.scss */
 .btn:active, .btn.active {
-  background-image: none;
-}
+  background-image: none; }
 
-/* line 72, bootstrap-scss/conferences-theme.scss */
 .btn-default {
   background-image: -webkit-linear-gradient(top, white 0%, #e0e0e0 100%);
-  background-image: linear-gradient(to bottom, #ffffff 0%, #e0e0e0 100%);
+  background-image: linear-gradient(to bottom, white 0%, #e0e0e0 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFFFFF', endColorstr='#FFE0E0E0', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
   border-color: #dbdbdb;
   text-shadow: 0 1px 0 white;
-  border-color: #ccc;
-}
-/* line 50, bootstrap-scss/conferences-theme.scss */
-.btn-default:hover, .btn-default:focus {
-  background-color: #e0e0e0;
-  background-position: 0 -15px;
-}
-/* line 56, bootstrap-scss/conferences-theme.scss */
-.btn-default:active, .btn-default.active {
-  background-color: #e0e0e0;
-  border-color: #dbdbdb;
-}
+  border-color: #ccc; }
+  .btn-default:hover, .btn-default:focus {
+    background-color: #e0e0e0;
+    background-position: 0 -15px; }
+  .btn-default:active, .btn-default.active {
+    background-color: #e0e0e0;
+    border-color: #dbdbdb; }
 
-/* line 73, bootstrap-scss/conferences-theme.scss */
 .btn-primary {
   background-image: -webkit-linear-gradient(top, #428bca 0%, #2d6ca2 100%);
   background-image: linear-gradient(to bottom, #428bca 0%, #2d6ca2 100%);
@@ -77,20 +64,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF428BCA', endColorstr='#FF2D6CA2', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #2b669a;
-}
-/* line 50, bootstrap-scss/conferences-theme.scss */
-.btn-primary:hover, .btn-primary:focus {
-  background-color: #2d6ca2;
-  background-position: 0 -15px;
-}
-/* line 56, bootstrap-scss/conferences-theme.scss */
-.btn-primary:active, .btn-primary.active {
-  background-color: #2d6ca2;
-  border-color: #2b669a;
-}
+  border-color: #2b669a; }
+  .btn-primary:hover, .btn-primary:focus {
+    background-color: #2d6ca2;
+    background-position: 0 -15px; }
+  .btn-primary:active, .btn-primary.active {
+    background-color: #2d6ca2;
+    border-color: #2b669a; }
 
-/* line 74, bootstrap-scss/conferences-theme.scss */
 .btn-success {
   background-image: -webkit-linear-gradient(top, #5cb85c 0%, #419641 100%);
   background-image: linear-gradient(to bottom, #5cb85c 0%, #419641 100%);
@@ -98,20 +79,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5CB85C', endColorstr='#FF419641', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #3e8f3e;
-}
-/* line 50, bootstrap-scss/conferences-theme.scss */
-.btn-success:hover, .btn-success:focus {
-  background-color: #419641;
-  background-position: 0 -15px;
-}
-/* line 56, bootstrap-scss/conferences-theme.scss */
-.btn-success:active, .btn-success.active {
-  background-color: #419641;
-  border-color: #3e8f3e;
-}
+  border-color: #3e8f3e; }
+  .btn-success:hover, .btn-success:focus {
+    background-color: #419641;
+    background-position: 0 -15px; }
+  .btn-success:active, .btn-success.active {
+    background-color: #419641;
+    border-color: #3e8f3e; }
 
-/* line 75, bootstrap-scss/conferences-theme.scss */
 .btn-info {
   background-image: -webkit-linear-gradient(top, #5bc0de 0%, #2aabd2 100%);
   background-image: linear-gradient(to bottom, #5bc0de 0%, #2aabd2 100%);
@@ -119,20 +94,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF2AABD2', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #28a4c9;
-}
-/* line 50, bootstrap-scss/conferences-theme.scss */
-.btn-info:hover, .btn-info:focus {
-  background-color: #2aabd2;
-  background-position: 0 -15px;
-}
-/* line 56, bootstrap-scss/conferences-theme.scss */
-.btn-info:active, .btn-info.active {
-  background-color: #2aabd2;
-  border-color: #28a4c9;
-}
+  border-color: #28a4c9; }
+  .btn-info:hover, .btn-info:focus {
+    background-color: #2aabd2;
+    background-position: 0 -15px; }
+  .btn-info:active, .btn-info.active {
+    background-color: #2aabd2;
+    border-color: #28a4c9; }
 
-/* line 76, bootstrap-scss/conferences-theme.scss */
 .btn-warning {
   background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
   background-image: linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
@@ -140,20 +109,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF0AD4E', endColorstr='#FFEB9316', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #e38d13;
-}
-/* line 50, bootstrap-scss/conferences-theme.scss */
-.btn-warning:hover, .btn-warning:focus {
-  background-color: #eb9316;
-  background-position: 0 -15px;
-}
-/* line 56, bootstrap-scss/conferences-theme.scss */
-.btn-warning:active, .btn-warning.active {
-  background-color: #eb9316;
-  border-color: #e38d13;
-}
+  border-color: #e38d13; }
+  .btn-warning:hover, .btn-warning:focus {
+    background-color: #eb9316;
+    background-position: 0 -15px; }
+  .btn-warning:active, .btn-warning.active {
+    background-color: #eb9316;
+    border-color: #e38d13; }
 
-/* line 77, bootstrap-scss/conferences-theme.scss */
 .btn-danger {
   background-image: -webkit-linear-gradient(top, #d9534f 0%, #c12e2a 100%);
   background-image: linear-gradient(to bottom, #d9534f 0%, #c12e2a 100%);
@@ -161,37 +124,27 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD9534F', endColorstr='#FFC12E2A', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
   background-repeat: repeat-x;
-  border-color: #b92c28;
-}
-/* line 50, bootstrap-scss/conferences-theme.scss */
-.btn-danger:hover, .btn-danger:focus {
-  background-color: #c12e2a;
-  background-position: 0 -15px;
-}
-/* line 56, bootstrap-scss/conferences-theme.scss */
-.btn-danger:active, .btn-danger.active {
-  background-color: #c12e2a;
-  border-color: #b92c28;
-}
+  border-color: #b92c28; }
+  .btn-danger:hover, .btn-danger:focus {
+    background-color: #c12e2a;
+    background-position: 0 -15px; }
+  .btn-danger:active, .btn-danger.active {
+    background-color: #c12e2a;
+    border-color: #b92c28; }
 
-/* line 86, bootstrap-scss/conferences-theme.scss */
 .thumbnail,
 .img-thumbnail {
   -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-}
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075); }
 
-/* line 97, bootstrap-scss/conferences-theme.scss */
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   background-image: -webkit-linear-gradient(top, whitesmoke 0%, #e8e8e8 100%);
-  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+  background-image: linear-gradient(to bottom, whitesmoke 0%, #e8e8e8 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF5F5F5', endColorstr='#FFE8E8E8', GradientType=0);
-  background-color: #e8e8e8;
-}
+  background-color: #e8e8e8; }
 
-/* line 103, bootstrap-scss/conferences-theme.scss */
 .dropdown-menu > .active > a,
 .dropdown-menu > .active > a:hover,
 .dropdown-menu > .active > a:focus {
@@ -199,392 +152,188 @@
   background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF428BCA', endColorstr='#FF357EBD', GradientType=0);
-  background-color: #357ebd;
-}
+  background-color: #357ebd; }
 
-/* line 155, bootstrap-scss/conferences-theme.scss */
-.alert {
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-/* line 168, bootstrap-scss/conferences-theme.scss */
-.alert-success {
-  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #c8e5bc 100%);
-  background-image: linear-gradient(to bottom, #dff0d8 0%, #c8e5bc 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDFF0D8', endColorstr='#FFC8E5BC', GradientType=0);
-  border-color: #b2dba1;
-}
-
-/* line 169, bootstrap-scss/conferences-theme.scss */
-.alert-info {
-  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #b9def0 100%);
-  background-image: linear-gradient(to bottom, #d9edf7 0%, #b9def0 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD9EDF7', endColorstr='#FFB9DEF0', GradientType=0);
-  border-color: #9acfea;
-}
-
-/* line 170, bootstrap-scss/conferences-theme.scss */
-.alert-warning {
-  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #f8efc0 100%);
-  background-image: linear-gradient(to bottom, #fcf8e3 0%, #f8efc0 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFCF8E3', endColorstr='#FFF8EFC0', GradientType=0);
-  border-color: #f5e79e;
-}
-
-/* line 171, bootstrap-scss/conferences-theme.scss */
-.alert-danger {
-  background-image: -webkit-linear-gradient(top, #f2dede 0%, #e7c3c3 100%);
-  background-image: linear-gradient(to bottom, #f2dede 0%, #e7c3c3 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF2DEDE', endColorstr='#FFE7C3C3', GradientType=0);
-  border-color: #dca7a7;
-}
-
-/* line 180, bootstrap-scss/conferences-theme.scss */
-.progress {
-  background-image: -webkit-linear-gradient(top, #ebebeb 0%, whitesmoke 100%);
-  background-image: linear-gradient(to bottom, #ebebeb 0%, #f5f5f5 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFEBEBEB', endColorstr='#FFF5F5F5', GradientType=0);
-}
-
-/* line 190, bootstrap-scss/conferences-theme.scss */
-.progress-bar {
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #3071a9 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #3071a9 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF428BCA', endColorstr='#FF3071A9', GradientType=0);
-}
-
-/* line 191, bootstrap-scss/conferences-theme.scss */
-.progress-bar-success {
-  background-image: -webkit-linear-gradient(top, #5cb85c 0%, #449d44 100%);
-  background-image: linear-gradient(to bottom, #5cb85c 0%, #449d44 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5CB85C', endColorstr='#FF449D44', GradientType=0);
-}
-
-/* line 192, bootstrap-scss/conferences-theme.scss */
-.progress-bar-info {
-  background-image: -webkit-linear-gradient(top, #5bc0de 0%, #31b0d5 100%);
-  background-image: linear-gradient(to bottom, #5bc0de 0%, #31b0d5 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF5BC0DE', endColorstr='#FF31B0D5', GradientType=0);
-}
-
-/* line 193, bootstrap-scss/conferences-theme.scss */
-.progress-bar-warning {
-  background-image: -webkit-linear-gradient(top, #f0ad4e 0%, #ec971f 100%);
-  background-image: linear-gradient(to bottom, #f0ad4e 0%, #ec971f 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF0AD4E', endColorstr='#FFEC971F', GradientType=0);
-}
-
-/* line 194, bootstrap-scss/conferences-theme.scss */
-.progress-bar-danger {
-  background-image: -webkit-linear-gradient(top, #d9534f 0%, #c9302c 100%);
-  background-image: linear-gradient(to bottom, #d9534f 0%, #c9302c 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD9534F', endColorstr='#FFC9302C', GradientType=0);
-}
-
-/* line 202, bootstrap-scss/conferences-theme.scss */
-.list-group {
-  border-radius: 4px;
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.075);
-}
-
-/* line 208, bootstrap-scss/conferences-theme.scss */
-.list-group-item.active,
-.list-group-item.active:hover,
-.list-group-item.active:focus {
-  text-shadow: 0 -1px 0 #3071a9;
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #3278b3 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #3278b3 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF428BCA', endColorstr='#FF3278B3', GradientType=0);
-  border-color: #3278b3;
-}
-
-/* line 221, bootstrap-scss/conferences-theme.scss */
-.panel {
-  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-}
-
-/* line 231, bootstrap-scss/conferences-theme.scss */
-.panel-default > .panel-heading {
-  background-image: -webkit-linear-gradient(top, whitesmoke 0%, #e8e8e8 100%);
-  background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF5F5F5', endColorstr='#FFE8E8E8', GradientType=0);
-}
-
-/* line 232, bootstrap-scss/conferences-theme.scss */
-.panel-primary > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #428bca 0%, #357ebd 100%);
-  background-image: linear-gradient(to bottom, #428bca 0%, #357ebd 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF428BCA', endColorstr='#FF357EBD', GradientType=0);
-}
-
-/* line 233, bootstrap-scss/conferences-theme.scss */
-.panel-success > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #dff0d8 0%, #d0e9c6 100%);
-  background-image: linear-gradient(to bottom, #dff0d8 0%, #d0e9c6 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDFF0D8', endColorstr='#FFD0E9C6', GradientType=0);
-}
-
-/* line 234, bootstrap-scss/conferences-theme.scss */
-.panel-info > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #d9edf7 0%, #c4e3f3 100%);
-  background-image: linear-gradient(to bottom, #d9edf7 0%, #c4e3f3 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFD9EDF7', endColorstr='#FFC4E3F3', GradientType=0);
-}
-
-/* line 235, bootstrap-scss/conferences-theme.scss */
-.panel-warning > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #fcf8e3 0%, #faf2cc 100%);
-  background-image: linear-gradient(to bottom, #fcf8e3 0%, #faf2cc 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFCF8E3', endColorstr='#FFFAF2CC', GradientType=0);
-}
-
-/* line 236, bootstrap-scss/conferences-theme.scss */
-.panel-danger > .panel-heading {
-  background-image: -webkit-linear-gradient(top, #f2dede 0%, #ebcccc 100%);
-  background-image: linear-gradient(to bottom, #f2dede 0%, #ebcccc 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFF2DEDE', endColorstr='#FFEBCCCC', GradientType=0);
-}
-
-/* line 244, bootstrap-scss/conferences-theme.scss */
-.well {
-  background-image: -webkit-linear-gradient(top, #e8e8e8 0%, whitesmoke 100%);
-  background-image: linear-gradient(to bottom, #e8e8e8 0%, #f5f5f5 100%);
-  background-repeat: repeat-x;
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFE8E8E8', endColorstr='#FFF5F5F5', GradientType=0);
-  border-color: gainsboro;
-  -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05), 0 1px 0 rgba(255, 255, 255, 0.1);
-}
-
-/* line 253, bootstrap-scss/conferences-theme.scss */
 body {
-  padding-top: 70px;
-}
+  background: transparent url("../img/asphalt.jpg") repeat 0 0; }
 
-/* line 257, bootstrap-scss/conferences-theme.scss */
+/* hiding this for now as we might want it again if the other thing is a pain in the ass
 header.navbar {
-  background: #fff;
-  background-image: none;
-  border: 0px;
-}
-/* line 263, bootstrap-scss/conferences-theme.scss */
-header.navbar .navbar-brand {
-  font-family: "Chalkboard", "Chalkboard SE", "Comic Sans", "Comic Sans MS", cursive;
-  font-size: 21.6px;
-  padding: 1em;
-}
-/* line 271, bootstrap-scss/conferences-theme.scss */
-header.navbar .navbar-nav li {
-  font-family: "Chalkboard", "Chalkboard SE", "Comic Sans", "Comic Sans MS", cursive;
-  font-size: 21.6px;
-}
-/* line 275, bootstrap-scss/conferences-theme.scss */
-header.navbar .navbar-nav li a {
-  text-shadow: none;
-}
 
-/* line 21, bootstrap-scss/_mixins.scss */
-main .month:before, main .month:after {
-  content: " ";
-  display: table;
-}
-/* line 25, bootstrap-scss/_mixins.scss */
-main .month:after {
-  clear: both;
-}
-/* line 289, bootstrap-scss/conferences-theme.scss */
-main .month h2 {
-  font-size: 26px;
-  font-family: "Chalkboard", "Chalkboard SE", "Comic Sans", "Comic Sans MS", cursive;
-  display: block;
-  width: 25%;
-  float: left;
-}
-/* line 297, bootstrap-scss/conferences-theme.scss */
-main .month .conferences {
-  display: table;
-  float: left;
-  width: 75%;
-}
-/* line 299, bootstrap-scss/conferences-theme.scss */
-main .month .conferences:before {
-  background: #232c33;
-  bottom: 0;
-  content: "";
-  left: 20%;
-  margin-left: -10px;
-  position: absolute;
-  top: 0;
-  width: 10px;
-}
-/* line 314, bootstrap-scss/conferences-theme.scss */
-main .month .conferences .conference {
-  width: 33%;
-  float: left;
-  padding: 1em;
-  box-sizing: border-box;
-}
-/* line 321, bootstrap-scss/conferences-theme.scss */
-main .month .conferences .conference h3 {
-  font-size: 18px;
-}
+    background: #fff;
+    background-image: none;
+    border: 0px;
+    
+    .navbar-brand {
+        font-family: $cursive-font;
+        font-size: $font-size-base * $scale-x2;
+        padding: 1em;
+    }
+    
+    .navbar-nav {
+        
+        li {
+            font-family: $cursive-font;
+            font-size: $font-size-base * $scale-x2;
+            
+            a {
+                text-shadow: none;
+            }
+        }
+    }
+}*/
+main {
+  position: relative; }
+  main:before {
+    background: #ead704;
+    bottom: 0;
+    content: "";
+    right: 5px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+    opacity: 0.7; }
+  main:after {
+    background: #ead704;
+    bottom: 0;
+    content: "";
+    right: 40px;
+    position: absolute;
+    top: 0;
+    width: 15px;
+    opacity: 0.7; }
+  main .month {
+    display: block;
+    padding: 2em 0;
+    opacity: 0.7;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
+    main .month:before, main .month:after {
+      content: " ";
+      display: table; }
+    main .month:after {
+      clear: both; }
+    main .month:hover {
+      opacity: 1; }
+    main .month h2 {
+      font-size: 45px;
+      font-family: "league-gothic", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      display: block;
+      width: 38%;
+      float: left;
+      color: #f3f2e6;
+      padding: 0.25em 0; }
+    main .month .conferences {
+      float: left;
+      width: 62%; }
+      main .month .conferences:before {
+        background: #f3f2e6;
+        bottom: 0;
+        content: "";
+        left: 24%;
+        position: absolute;
+        top: 0;
+        width: 15px;
+        opacity: 0.5; }
+      main .month .conferences .conference {
+        width: 33%;
+        float: left;
+        padding: 1em;
+        box-sizing: border-box; }
+        main .month .conferences .conference h3 {
+          font-size: 18px;
+          color: #ead704; }
+          main .month .conferences .conference h3 a {
+            text-decoration: none; }
+        main .month .conferences .conference ul {
+          margin: 0;
+          padding: 0; }
+          main .month .conferences .conference ul li {
+            list-style: none;
+            list-style-position: outside; }
 
-/* line 330, bootstrap-scss/conferences-theme.scss */
 .cbp-af-header {
   position: fixed;
-  top: 0;
   left: 0;
   width: 100%;
-  background: #7C7C7C;
+  background: #000;
+  border-radius: 4px;
   z-index: 10000;
-  height: 230px;
+  height: 160px;
   overflow: hidden;
+  -webkit-box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, 0.75);
+  box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, 0.75);
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
-  transition: height 0.3s;
-}
+  transition: height 0.3s; }
 
-/* line 344, bootstrap-scss/conferences-theme.scss */
 .cbp-af-header .cbp-af-inner {
   width: 90%;
   max-width: 69em;
   margin: 0 auto;
-  padding: 0 1.875em;
-}
+  padding: 0 1.875em; }
 
 /* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
-/* line 354, bootstrap-scss/conferences-theme.scss */
-.cbp-af-header h1,
-.cbp-af-header nav a {
-  line-height: 230px;
-}
-
-/* line 358, bootstrap-scss/conferences-theme.scss */
 .cbp-af-header h1 {
-  text-transform: uppercase;
-  color: #333;
-  letter-spacing: 4px;
-  font-size: 20px;
+  font-family: "Chalkboard", "Chalkboard SE", "Comic Sans", "Comic Sans MS", cursive;
+  font-size: 31.11px;
+  color: #ed145b;
   margin: 0;
-  float: left;
-}
+  text-align: center;
+  padding: 1em 0; }
 
-/* line 368, bootstrap-scss/conferences-theme.scss */
-.cbp-af-header nav a {
-  color: #fff;
-  font-weight: 700;
-  margin: 0 0 0 20px;
-  font-size: 1.4em;
-}
-
-/* line 375, bootstrap-scss/conferences-theme.scss */
-.cbp-af-header nav a:hover {
-  color: #333;
-}
+.cbp-af-header nav {
+  text-align: center; }
+  .cbp-af-header nav a {
+    font-size: 18px;
+    font-family: "Chalkboard", "Chalkboard SE", "Comic Sans", "Comic Sans MS", cursive;
+    color: #72c59b;
+    text-align: center;
+    margin: 0 1em; }
 
 /* Transitions and class for reduced height */
-/* line 381, bootstrap-scss/conferences-theme.scss */
 .cbp-af-header h1,
 .cbp-af-header nav a {
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
-  transition: all 0.3s;
-}
+  transition: all 0.3s; }
 
-/* line 387, bootstrap-scss/conferences-theme.scss */
 .cbp-af-header.cbp-af-header-shrink {
-  height: 90px;
-}
+  height: 100px; }
 
-/* line 392, bootstrap-scss/conferences-theme.scss */
-.cbp-af-header.cbp-af-header-shrink h1,
-.cbp-af-header.cbp-af-header-shrink nav a {
-  line-height: 90px;
-}
-
-/* line 396, bootstrap-scss/conferences-theme.scss */
 .cbp-af-header.cbp-af-header-shrink h1 {
-  font-size: 20px;
-}
+  font-size: 18px; }
 
 /* Example Media Queries */
 @media screen and (max-width: 1163px) {
-  /* line 403, bootstrap-scss/conferences-theme.scss */
   .cbp-af-header .cbp-af-inner {
-    width: 100%;
-  }
+    width: 100%; }
 
-  /* line 408, bootstrap-scss/conferences-theme.scss */
   .cbp-af-header h1,
   .cbp-af-header nav {
     display: block;
     margin: 0 auto;
     text-align: center;
-    float: none;
-  }
+    float: none; }
 
-  /* line 416, bootstrap-scss/conferences-theme.scss */
-  .cbp-af-header h1,
-  .cbp-af-header nav a {
-    line-height: 80px;
-  }
-
-  /* line 420, bootstrap-scss/conferences-theme.scss */
-  .cbp-af-header nav a {
-    margin: 0 10px;
-  }
-
-  /* line 425, bootstrap-scss/conferences-theme.scss */
   .cbp-af-header.cbp-af-header-shrink h1,
   .cbp-af-header.cbp-af-header-shrink nav a {
-    line-height: 45px;
-  }
+    line-height: 45px; }
 
-  /* line 429, bootstrap-scss/conferences-theme.scss */
   .cbp-af-header.cbp-af-header-shrink h1 {
-    font-size: 2em;
-  }
+    font-size: 2em; }
 
-  /* line 433, bootstrap-scss/conferences-theme.scss */
   .cbp-af-header.cbp-af-header-shrink nav a {
-    font-size: 1em;
-  }
-}
+    font-size: 1em; } }
 @media screen and (max-width: 32.25em) {
-  /* line 439, bootstrap-scss/conferences-theme.scss */
   .cbp-af-header nav a {
-    font-size: 1em;
-  }
-}
+    font-size: 1em; } }
 @media screen and (max-width: 24em) {
-  /* line 446, bootstrap-scss/conferences-theme.scss */
   .cbp-af-header nav a,
   .cbp-af-header.cbp-af-header-shrink nav a {
-    line-height: 35px;
-  }
-}
-/* line 452, bootstrap-scss/conferences-theme.scss */
-main {
-  margin-top: 160px;
-}
+    line-height: 35px; } }
