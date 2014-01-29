@@ -112,7 +112,7 @@
 // --------------------------------------------------
 
 // Default navbar
-/* .navbar-default {
+.navbar-default {
   @include gradient-vertical($start-color: lighten($navbar-default-bg, 10%), $end-color: $navbar-default-bg);
   @include reset-filter(); // Remove gradient in IE<10 to fix bug where dropdowns don't get triggered
   border-radius: $navbar-border-radius;
@@ -143,7 +143,7 @@
   .navbar-nav > li > a {
     text-shadow: 0 -1px 0 rgba(0,0,0,.25);
   }
-} */
+} 
 
 
 // 2. Our custom styles
@@ -188,7 +188,6 @@ header.navbar {
 main {
 
     position: relative;
-    padding-top: 200px;
 
         // yellow lines
         
@@ -223,7 +222,6 @@ main {
         display: block;
         padding: 2em 0;
         opacity: 0.7;
-        @include animate-everything;
         
         &:hover {
             opacity: 1;
@@ -292,20 +290,21 @@ main {
     position: fixed;
     left: 0;    
     width: 100%;
-    background-color: rgba(0,0,0,0.8);
-    border-radius: 4px;
-    z-index: 10000;
+    z-index: 100;
     height: 160px;
     overflow: hidden;
+    /*
     -webkit-box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.5);
     -moz-box-shadow:    1px 0px 3px 3px rgba(0, 0, 0, 0.5);
     box-shadow:         1px 0px 3px 3px rgba(0, 0, 0, 0.5);  
+    */
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     transition: height 0.3s;
 }
 
 .cbp-af-header .cbp-af-inner {
+
   width: 90%;
   max-width: 69em;
   margin: 0 auto;
@@ -325,6 +324,7 @@ main {
 
 .cbp-af-header nav {
     text-align: center;
+
 
     a {
         font-size: $font-size-base * $scale-x1;

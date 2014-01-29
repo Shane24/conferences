@@ -12,6 +12,7 @@
 
 <body data-spy="scroll" data-target="navbar">
 
+<!--
 <header>
   <div class="container">
     <div class="cbp-af-header">
@@ -33,9 +34,40 @@
         </div>
     </div>
   </div>
+</header>
+-->
+
+<header class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+          <button data-target="collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="../">MC</a>
+        </div>
+        <nav role="navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#feb">Feb</a></li>
+            <li><a href="#mar">Mar</a></li>
+            <li><a href="#apr">Apr</a></li>
+            <li><a href="#may">May</a></li>
+            <li><a href="#june">June</a></li>
+            <li><a href="#july">July</a></li>
+            <li><a href="#aug">Aug</a></li>
+            <li><a href="#sept">Sept</a></li>
+            <li><a href="#oct">Oct</a></li>
+            <li><a href="#nov">Nov</a></li>
+            <li><a href="#dec">Dec</a></li>
+          </ul>
+        </nav>
+    </div>
 
 
 </header>
+
 <main>
     <div class="container">
         <div class="row">
@@ -377,6 +409,8 @@
     <?php # container ?>
 </main>
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>$('body').scrollspy({ target: '.navbar' });</script>
 <script src="js/classie.js"></script>
-<script src="js/cbpAnimatedHeader.js"></script>
+<!--<script src="js/cbpAnimatedHeader.js"></script>-->
 </html>
