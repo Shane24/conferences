@@ -222,7 +222,6 @@ main {
         display: block;
         padding: 2em 0;
         opacity: 0.7;
-        @include animate-everything;
         
         &:hover {
             opacity: 1;
