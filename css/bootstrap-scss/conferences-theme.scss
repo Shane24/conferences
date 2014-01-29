@@ -188,6 +188,7 @@ header.navbar {
 main {
 
     position: relative;
+    padding-top: 200px;
 
         // yellow lines
         
@@ -222,6 +223,7 @@ main {
         display: block;
         padding: 2em 0;
         opacity: 0.7;
+        @include animate-everything;
         
         &:hover {
             opacity: 1;
@@ -290,14 +292,14 @@ main {
     position: fixed;
     left: 0;    
     width: 100%;
-    background: #000;
+    background-color: rgba(0,0,0,0.8);
     border-radius: 4px;
     z-index: 10000;
     height: 160px;
     overflow: hidden;
-    -webkit-box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, 0.75);
-    -moz-box-shadow:    1px 0px 10px 10px rgba(0, 0, 0, 0.75);
-    box-shadow:         1px 0px 10px 10px rgba(0, 0, 0, 0.75);  
+    -webkit-box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow:    1px 0px 3px 3px rgba(0, 0, 0, 0.5);
+    box-shadow:         1px 0px 3px 3px rgba(0, 0, 0, 0.5);  
     -webkit-transition: height 0.3s;
     -moz-transition: height 0.3s;
     transition: height 0.3s;
@@ -326,8 +328,8 @@ main {
 
     a {
         font-size: $font-size-base * $scale-x1;
-        font-family: $cursive-font;
-        color: $green;
+        color: $yellow;
+        font-weight: bold;
         text-align: center;
         margin: 0 1em;
     }

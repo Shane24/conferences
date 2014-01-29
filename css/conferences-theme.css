@@ -183,7 +183,8 @@ header.navbar {
     }
 }*/
 main {
-  position: relative; }
+  position: relative;
+  padding-top: 200px; }
   main:before {
     background: #ead704;
     bottom: 0;
@@ -205,7 +206,11 @@ main {
   main .month {
     display: block;
     padding: 2em 0;
-    opacity: 0.7; }
+    opacity: 0.7;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out; }
     main .month:before, main .month:after {
       content: " ";
       display: table; }
@@ -256,14 +261,14 @@ main {
   position: fixed;
   left: 0;
   width: 100%;
-  background: #000;
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 4px;
   z-index: 10000;
   height: 160px;
   overflow: hidden;
-  -webkit-box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, 0.75);
-  box-shadow: 1px 0px 10px 10px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.5);
+  box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.5);
   -webkit-transition: height 0.3s;
   -moz-transition: height 0.3s;
   transition: height 0.3s; }
@@ -287,8 +292,8 @@ main {
   text-align: center; }
   .cbp-af-header nav a {
     font-size: 18px;
-    font-family: "Chalkboard", "Chalkboard SE", "Comic Sans", "Comic Sans MS", cursive;
-    color: #72c59b;
+    color: #ead704;
+    font-weight: bold;
     text-align: center;
     margin: 0 1em; }
 
