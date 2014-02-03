@@ -169,7 +169,7 @@ header.navbar {
         float: none;
         font-family: $league-gothic;
         font-weight: 400;
-        @include box-shadow(2px 2px 2px rgba(0,0,0,.5));
+        @include box-shadow(2px 2px 1px rgba(0,0,0,.5));
     
         h1 {
             text-transform: uppercase;
@@ -323,10 +323,15 @@ main {
     }
 } // main
 
+footer {
+    background: #000;
+    color: $gray;
+    padding: 3em 0;
+}
 
 // Bigger screens 
 
-@media (min-width: $screen-md-min) {
+@media (min-width: $screen-md-min), (min-width: $screen-sm-min) {
 
     header.navbar {
         display: inline-block;
@@ -337,7 +342,7 @@ main {
             background-color: #000;
             padding: 10px 30px;
             margin: 0;
-            float: none;
+            float: right;
         
             h1 {
                 text-transform: uppercase;
@@ -358,13 +363,14 @@ main {
         nav {
             width: auto;
             background: none !important;
+            float: right;
     
              .navbar-nav {
                 margin: 0;
-                padding: 0 0 0 10px;
+                padding: 0 20px 0 0;
                 background-color: #000;
                 width: auto;
-                @include box-shadow(2px 2px 2px rgba(0,0,0,.5));
+                @include box-shadow(2px 2px 1px rgba(0,0,0,.5));
             
                 li {
                     font-size: $font-size-base;
@@ -374,7 +380,7 @@ main {
                     border: 0;
                     
                     a {
-                        padding: 1em 20px;
+                        padding: 1em;
                         text-transform: uppercase;
                         font-weight: bold;
                         @include animate-everything;
@@ -383,6 +389,10 @@ main {
                               background-color: $pink;
                               color: #fff;
                           }
+                    }
+                    
+                    &:first-of-type a {
+                        padding-left: 1.5em;
                     }
                     
                     &.active a {
@@ -464,6 +474,10 @@ main {
                     float: left;
                     padding: 1em;
                     box-sizing: border-box;
+                    
+                    &:nth-child(3n + 1) {
+                        clear: both;
+                    }
                    
                     h3 {
                         font-size: ceil(($font-size-base * $scale-x1));
@@ -481,6 +495,7 @@ main {
                         li {
                             list-style: none;
                             list-style-position: outside;
+                            font-size: ceil(($font-size-base * $scale-x1));
                         }
                     }
                 } 
@@ -489,3 +504,31 @@ main {
     } 
 
 } // end big screens
+
+// Mid-sized screens
+
+@media (min-width: $screen-sm-min) and (max-width: $screen-md-min) { 
+
+    header.navbar .navbar-brand h1,
+    header.navbar .navbar-brand p,
+    main .month h2 {
+        font-size: ceil(($font-size-base * $scale-x4));
+    }
+
+    main .month .conferences .conference {
+        width: 50%;
+        
+        &:nth-child(2n+1){
+            clear: both;
+        }
+        
+        &:nth-child(3n+1) {
+            clear: none;
+        }
+    }
+}
+
+/*
+** Thanks for the inspiration http://tympanus.net/Blueprints/AnimatedHeader/# 
+**
+*/

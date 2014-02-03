@@ -184,8 +184,8 @@ header.navbar {
     float: none;
     font-family: "league-gothic", sans-serif;
     font-weight: 400;
-    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+    -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5); }
     header.navbar .navbar-brand h1 {
       text-transform: uppercase;
       padding: 0;
@@ -302,7 +302,12 @@ main {
             list-style-position: outside;
             color: #f3f2e6; }
 
-@media (min-width: 992px) {
+footer {
+  background: #000;
+  color: #555555;
+  padding: 3em 0; }
+
+@media (min-width: 992px), (min-width: 768px) {
   header.navbar {
     display: inline-block;
     background: none; }
@@ -311,7 +316,7 @@ main {
       background-color: #000;
       padding: 10px 30px;
       margin: 0;
-      float: none; }
+      float: right; }
       header.navbar .navbar-brand h1 {
         text-transform: uppercase;
         padding: 0;
@@ -325,14 +330,15 @@ main {
         font-size: 44.79px; }
     header.navbar nav {
       width: auto;
-      background: none !important; }
+      background: none !important;
+      float: right; }
       header.navbar nav .navbar-nav {
         margin: 0;
-        padding: 0 0 0 10px;
+        padding: 0 20px 0 0;
         background-color: #000;
         width: auto;
-        -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+        -webkit-box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5); }
         header.navbar nav .navbar-nav li {
           font-size: 15px;
           float: none;
@@ -340,7 +346,7 @@ main {
           display: inline-block;
           border: 0; }
           header.navbar nav .navbar-nav li a {
-            padding: 1em 20px;
+            padding: 1em;
             text-transform: uppercase;
             font-weight: bold;
             -webkit-transition: all 0.5s ease-in-out;
@@ -350,6 +356,8 @@ main {
             header.navbar nav .navbar-nav li a:hover {
               background-color: #ed145b;
               color: #fff; }
+          header.navbar nav .navbar-nav li:first-of-type a {
+            padding-left: 1.5em; }
           header.navbar nav .navbar-nav li.active a {
             color: #ed145b; }
 
@@ -411,6 +419,8 @@ main {
           float: left;
           padding: 1em;
           box-sizing: border-box; }
+          main .month .conferences .conference:nth-child(3n + 1) {
+            clear: both; }
           main .month .conferences .conference h3 {
             font-size: 18px;
             color: #ead704; }
@@ -421,4 +431,21 @@ main {
             padding: 0; }
             main .month .conferences .conference ul li {
               list-style: none;
-              list-style-position: outside; } }
+              list-style-position: outside;
+              font-size: 18px; } }
+@media (min-width: 768px) and (max-width: 992px) {
+  header.navbar .navbar-brand h1,
+  header.navbar .navbar-brand p,
+  main .month h2 {
+    font-size: 32px; }
+
+  main .month .conferences .conference {
+    width: 50%; }
+    main .month .conferences .conference:nth-child(2n+1) {
+      clear: both; }
+    main .month .conferences .conference:nth-child(3n+1) {
+      clear: none; } }
+/*
+** Thanks for the inspiration http://tympanus.net/Blueprints/AnimatedHeader/# 
+**
+*/
