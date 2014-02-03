@@ -12,30 +12,38 @@
 
 <body data-spy="scroll" data-target="navbar">
 
-<header>
-  <div class="container">
-    <div class="cbp-af-header">
-        <div class="cbp-af-inner">
-            <h1>MuchConferenc.es</h1>
-            <nav>
-                <a href="#feb">Feb</a>
-                <a href="#mar">Mar</a>
-                <a href="#apr">Apr</a>
-                <a href="#may">May</a>
-                <a href="#june">June</a>
-                <a href="#july">July</a>
-                <a href="#aug">Aug</a>
-                <a href="#sept">Sept</a>
-                <a href="#oct">Oct</a>
-                <a href="#nov">Nov</a>
-                <a href="#dec">Dec</a>
-            </nav>
+<header class="navbar navbar-fixed-top">
+        <div class="navbar-header">
+          <button data-target=".navbar-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          
+          <div class="navbar-brand clearfix">
+            <h1><a href="../">Much Conferenc.es</a></h1>
+            <p>Conferences for web designers & developers in 2014</p>
+          </h1>
         </div>
-    </div>
-  </div>
 
-
+        <nav role="navigation" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#feb">Feb</a></li>
+            <li><a href="#mar">Mar</a></li>
+            <li><a href="#apr">Apr</a></li>
+            <li><a href="#may">May</a></li>
+            <li><a href="#june">June</a></li>
+            <li><a href="#july">July</a></li>
+            <li><a href="#aug">Aug</a></li>
+            <li><a href="#sept">Sept</a></li>
+            <li><a href="#oct">Oct</a></li>
+            <li><a href="#nov">Nov</a></li>
+            <li><a href="#dec">Dec</a></li>
+          </ul>
+        </nav>
 </header>
+
 <main>
     <div class="container">
         <div class="row">
@@ -377,6 +385,8 @@
     <?php # container ?>
 </main>
 <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>$('body').scrollspy({ target: '.navbar' });</script>
 <script src="js/classie.js"></script>
-<script src="js/cbpAnimatedHeader.js"></script>
+<!--<script src="js/cbpAnimatedHeader.js"></script>-->
 </html>

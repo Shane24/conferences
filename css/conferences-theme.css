@@ -154,37 +154,101 @@
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF428BCA', endColorstr='#FF357EBD', GradientType=0);
   background-color: #357ebd; }
 
+.navbar-default {
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+  background-color: #222222; }
+
+.navbar-brand,
+.navbar-nav > li > a {
+  text-shadow: none; }
+
+header.navbar .navbar-brand p {
+  font-size: 25.92px; }
+
 body {
   background: transparent url("../img/asphalt.jpg") repeat 0 0; }
 
-/* hiding this for now as we might want it again if the other thing is a pain in the ass
+/* hiding this for now as we might want it again if the other thing is a pain in the ass */
 header.navbar {
-
-    background: #fff;
+  width: auto;
+  border: 0px;
+  background-image: none; }
+  header.navbar .navbar-header {
+    float: none;
+    display: block; }
+  header.navbar .navbar-brand {
+    display: block;
+    background-color: #000;
+    padding: 10px 15px;
+    margin: 0;
+    float: none;
+    font-family: "league-gothic", sans-serif;
+    font-weight: 400;
+    -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+    header.navbar .navbar-brand h1 {
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0;
+      display: block;
+      font-size: 25.92px; }
+    header.navbar .navbar-brand p {
+      display: block;
+      margin: 0;
+      padding: 5px 0px;
+      line-height: 1.1;
+      color: #555555;
+      font-size: 25.92px; }
+  header.navbar .navbar-toggle {
+    background-color: #ead704;
     background-image: none;
-    border: 0px;
-    
-    .navbar-brand {
-        font-family: $cursive-font;
-        font-size: $font-size-base * $scale-x2;
-        padding: 1em;
-    }
-    
-    .navbar-nav {
-        
-        li {
-            font-family: $cursive-font;
-            font-size: $font-size-base * $scale-x2;
-            
-            a {
-                text-shadow: none;
-            }
-        }
-    }
-}*/
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    margin: 0px;
+    padding: 9px 10px;
+    position: absolute;
+    right: 10px;
+    top: 15px; }
+    header.navbar .navbar-toggle .icon-bar {
+      background-color: #000; }
+  header.navbar nav {
+    clear: both;
+    margin: 0;
+    float: none;
+    width: 100%;
+    background-color: #000; }
+    header.navbar nav .navbar-nav {
+      display: block;
+      width: 100%;
+      margin: 0;
+      background-color: #000;
+      width: auto;
+      -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+      box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+      header.navbar nav .navbar-nav li {
+        display: block;
+        float: left;
+        font-size: 15px;
+        border: 1px solid #555555;
+        margin: 0;
+        padding: 0;
+        width: 32%; }
+        header.navbar nav .navbar-nav li a {
+          padding: 1em;
+          text-transform: uppercase;
+          font-weight: bold;
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out; }
+          header.navbar nav .navbar-nav li a:hover {
+            background-color: #ed145b;
+            color: #fff; }
+        header.navbar nav .navbar-nav li.active a {
+          color: #ed145b; }
+
 main {
-  position: relative;
-  padding-top: 200px; }
+  position: relative; }
   main:before {
     background: #ead704;
     bottom: 0;
@@ -192,61 +256,41 @@ main {
     right: 5px;
     position: absolute;
     top: 0;
-    width: 15px;
+    width: 10px;
     opacity: 0.7; }
   main:after {
     background: #ead704;
     bottom: 0;
     content: "";
-    right: 40px;
+    right: 30px;
     position: absolute;
     top: 0;
-    width: 15px;
+    width: 10px;
     opacity: 0.7; }
   main .month {
     display: block;
-    padding: 2em 0;
-    opacity: 0.7;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out; }
+    padding: 80px 0 0 0; }
     main .month:before, main .month:after {
       content: " ";
       display: table; }
     main .month:after {
       clear: both; }
-    main .month:hover {
-      opacity: 1; }
     main .month h2 {
-      font-size: 45px;
+      font-size: 26px;
       font-family: "league-gothic", sans-serif;
       font-weight: 400;
       text-transform: uppercase;
       display: block;
-      width: 38%;
-      float: left;
       color: #f3f2e6;
       padding: 0.25em 0; }
     main .month .conferences {
-      float: left;
-      width: 62%; }
-      main .month .conferences:before {
-        background: #f3f2e6;
-        bottom: 0;
-        content: "";
-        left: 24%;
-        position: absolute;
-        top: 0;
-        width: 15px;
-        opacity: 0.5; }
+      padding-bottom: 2em; }
       main .month .conferences .conference {
-        width: 33%;
-        float: left;
-        padding: 1em;
-        box-sizing: border-box; }
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 0 1em 0; }
         main .month .conferences .conference h3 {
-          font-size: 18px;
+          font-size: 15px;
           color: #ead704; }
           main .month .conferences .conference h3 a {
             text-decoration: none; }
@@ -255,86 +299,126 @@ main {
           padding: 0; }
           main .month .conferences .conference ul li {
             list-style: none;
-            list-style-position: outside; }
+            list-style-position: outside;
+            color: #f3f2e6; }
 
-.cbp-af-header {
-  position: fixed;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 4px;
-  z-index: 10000;
-  height: 160px;
-  overflow: hidden;
-  -webkit-box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: 1px 0px 3px 3px rgba(0, 0, 0, 0.5);
-  -webkit-transition: height 0.3s;
-  -moz-transition: height 0.3s;
-  transition: height 0.3s; }
+@media (min-width: 992px) {
+  header.navbar {
+    display: inline-block;
+    background: none; }
+    header.navbar .navbar-brand {
+      display: inline-block;
+      background-color: #000;
+      padding: 10px 30px;
+      margin: 0;
+      float: none; }
+      header.navbar .navbar-brand h1 {
+        text-transform: uppercase;
+        padding: 0;
+        display: inline-block;
+        float: left;
+        font-size: 44.79px; }
+      header.navbar .navbar-brand p {
+        display: block;
+        float: left;
+        padding: 0 0 0 30px;
+        font-size: 44.79px; }
+    header.navbar nav {
+      width: auto;
+      background: none !important; }
+      header.navbar nav .navbar-nav {
+        margin: 0;
+        padding: 0 0 0 10px;
+        background-color: #000;
+        width: auto;
+        -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
+        header.navbar nav .navbar-nav li {
+          font-size: 15px;
+          float: none;
+          width: auto;
+          display: inline-block;
+          border: 0; }
+          header.navbar nav .navbar-nav li a {
+            padding: 1em 20px;
+            text-transform: uppercase;
+            font-weight: bold;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out; }
+            header.navbar nav .navbar-nav li a:hover {
+              background-color: #ed145b;
+              color: #fff; }
+          header.navbar nav .navbar-nav li.active a {
+            color: #ed145b; }
 
-.cbp-af-header .cbp-af-inner {
-  width: 90%;
-  max-width: 69em;
-  margin: 0 auto;
-  padding: 0 1.875em; }
-
-/* We just have one-lined elements, so we'll center the elements with the line-height set to the height of the header */
-.cbp-af-header h1 {
-  font-family: "Chalkboard", "Chalkboard SE", "Comic Sans", "Comic Sans MS", cursive;
-  font-size: 31.11px;
-  color: #ed145b;
-  margin: 0;
-  text-align: center;
-  padding: 1em 0; }
-
-.cbp-af-header nav {
-  text-align: center; }
-  .cbp-af-header nav a {
-    font-size: 18px;
-    color: #ead704;
-    font-weight: bold;
-    text-align: center;
-    margin: 0 1em; }
-
-/* Transitions and class for reduced height */
-.cbp-af-header h1,
-.cbp-af-header nav a {
-  -webkit-transition: all 0.3s;
-  -moz-transition: all 0.3s;
-  transition: all 0.3s; }
-
-.cbp-af-header.cbp-af-header-shrink {
-  height: 100px; }
-
-.cbp-af-header.cbp-af-header-shrink h1 {
-  font-size: 18px; }
-
-/* Example Media Queries */
-@media screen and (max-width: 1163px) {
-  .cbp-af-header .cbp-af-inner {
-    width: 100%; }
-
-  .cbp-af-header h1,
-  .cbp-af-header nav {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    float: none; }
-
-  .cbp-af-header.cbp-af-header-shrink h1,
-  .cbp-af-header.cbp-af-header-shrink nav a {
-    line-height: 45px; }
-
-  .cbp-af-header.cbp-af-header-shrink h1 {
-    font-size: 2em; }
-
-  .cbp-af-header.cbp-af-header-shrink nav a {
-    font-size: 1em; } }
-@media screen and (max-width: 32.25em) {
-  .cbp-af-header nav a {
-    font-size: 1em; } }
-@media screen and (max-width: 24em) {
-  .cbp-af-header nav a,
-  .cbp-af-header.cbp-af-header-shrink nav a {
-    line-height: 35px; } }
+  main {
+    position: relative; }
+    main:before {
+      background: #ead704;
+      bottom: 0;
+      content: "";
+      right: 5px;
+      position: absolute;
+      top: 0;
+      width: 15px;
+      opacity: 0.7; }
+    main:after {
+      background: #ead704;
+      bottom: 0;
+      content: "";
+      right: 40px;
+      position: absolute;
+      top: 0;
+      width: 15px;
+      opacity: 0.7; }
+    main .month {
+      display: block;
+      padding: 150px 0 0 0;
+      opacity: 0.7; }
+      main .month:before, main .month:after {
+        content: " ";
+        display: table; }
+      main .month:after {
+        clear: both; }
+      main .month:hover {
+        opacity: 1; }
+      main .month h2 {
+        font-size: 45px;
+        font-family: "league-gothic", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        display: block;
+        width: 38%;
+        float: left;
+        color: #f3f2e6;
+        padding: 0.25em 0; }
+      main .month .conferences {
+        float: left;
+        width: 62%; }
+        main .month .conferences:before {
+          background: #f3f2e6;
+          bottom: 0;
+          content: "";
+          left: 24%;
+          position: absolute;
+          top: 0;
+          width: 15px;
+          opacity: 0.1 !important; }
+        main .month .conferences .conference {
+          width: 33%;
+          float: left;
+          padding: 1em;
+          box-sizing: border-box; }
+          main .month .conferences .conference h3 {
+            font-size: 18px;
+            color: #ead704; }
+            main .month .conferences .conference h3 a {
+              text-decoration: none; }
+          main .month .conferences .conference ul {
+            margin: 0;
+            padding: 0; }
+            main .month .conferences .conference ul li {
+              list-style: none;
+              list-style-position: outside; } }
