@@ -326,7 +326,21 @@ main {
 footer {
     background: #000;
     color: $gray;
-    padding: 3em 0;
+    padding: 2em 0 0 0;
+    position: relative;
+    
+    p {
+        padding: 0 170px 1em 0;
+    }
+    
+    img {
+        display: block;
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
 }
 
 // Bigger screens 
