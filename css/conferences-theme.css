@@ -268,7 +268,7 @@ main {
     opacity: 0.7; }
   main .month {
     display: block;
-    padding: 80px 0 0 0; }
+    padding: 95px 0 0 0; }
     main .month:before, main .month:after {
       content: " ";
       display: table; }
