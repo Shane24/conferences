@@ -192,12 +192,20 @@ header.navbar {
       display: block;
       font-size: 25.92px; }
     header.navbar .navbar-brand p {
+      height: 30px;
       display: block;
       margin: 0;
+      opacity: 1;
       padding: 5px 0px;
       line-height: 1.1;
       color: #555555;
-      font-size: 25.92px; }
+      font-size: 25.92px;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      transition: all 0.3s; }
+  header.navbar.navbar-shrink p {
+    height: 0px;
+    opacity: 0; }
   header.navbar .navbar-toggle {
     background-color: #ead704;
     background-image: none;
@@ -207,7 +215,7 @@ header.navbar {
     padding: 9px 10px;
     position: absolute;
     right: 10px;
-    top: 15px; }
+    top: 10px; }
     header.navbar .navbar-toggle .icon-bar {
       background-color: #000; }
   header.navbar nav {
@@ -268,12 +276,14 @@ main {
     opacity: 0.7; }
   main .month {
     display: block;
-    padding: 95px 0 0 0; }
+    padding: 40px 0 0 0; }
     main .month:before, main .month:after {
       content: " ";
       display: table; }
     main .month:after {
       clear: both; }
+    main .month:first-of-type {
+      padding-top: 80px; }
     main .month h2 {
       font-size: 26px;
       font-family: "league-gothic", sans-serif;
@@ -303,18 +313,16 @@ main {
 
 footer {
   background: #000;
-  color: #555555;
+  color: #999999;
   padding: 2em 0 0 0;
   position: relative; }
   footer p {
-    padding: 0 170px 1em 0; }
+    padding: 0 0 1em 0; }
   footer img {
     display: block;
     width: 150px;
     height: 200px;
-    position: absolute;
-    bottom: 0px;
-    right: 0px; }
+    float: right; }
 
 @media (min-width: 992px), (min-width: 768px) {
   header.navbar {
@@ -334,9 +342,17 @@ footer {
         font-size: 44.79px; }
       header.navbar .navbar-brand p {
         display: block;
+        height: auto;
+        opacity: 1;
         float: left;
         padding: 0 0 0 30px;
-        font-size: 44.79px; }
+        font-size: 44.79px;
+        -webkit-transition: none;
+        -moz-transition: none;
+        transition: none; }
+    header.navbar.navbar-shrink p {
+      height: auto;
+      opacity: 1; }
     header.navbar nav {
       width: auto;
       background: none !important;
@@ -441,7 +457,21 @@ footer {
             main .month .conferences .conference ul li {
               list-style: none;
               list-style-position: outside;
-              font-size: 18px; } }
+              font-size: 18px; }
+
+  footer {
+    color: #999999;
+    padding: 2em 0 0 0;
+    position: relative; }
+    footer p {
+      padding: 0 170px 1em 0; }
+    footer img {
+      display: block;
+      width: 150px;
+      height: 200px;
+      position: absolute;
+      bottom: 0px;
+      right: 0px; } }
 @media (min-width: 768px) and (max-width: 992px) {
   header.navbar .navbar-brand h1,
   header.navbar .navbar-brand p,
