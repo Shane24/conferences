@@ -180,14 +180,26 @@ header.navbar {
         }
         
         p {
+            height: 30px;
             display: block;
             margin: 0;
+            opacity: 1;
             padding: 5px 0px;
             line-height: 1.1;
             color: $gray;
             font-size: $font-size-base * $scale-x3;
+           -webkit-transition: all 0.3s;
+            -moz-transition: all 0.3s;
+            transition: all 0.3s;        
         }
     } //.navbar-brand
+    
+    &.navbar-shrink {
+        p {
+            height: 0px;
+            opacity: 0;
+        }
+    }
     
     .navbar-toggle {
         background-color: $yellow;
@@ -198,7 +210,7 @@ header.navbar {
         padding: 9px 10px;
         position: absolute;
         right: 10px;
-        top: 15px;
+        top: 10px;
         
         .icon-bar {
             background-color: #000;
@@ -269,7 +281,7 @@ main {
             background: $yellow;
             bottom: 0;
             content: "";
-            right: 30px;
+            right: 30px;   
             position: absolute;
             top: 0;
             width: 10px;
@@ -279,7 +291,11 @@ main {
     .month {
         @include clearfix;
         display: block;
-        padding: 80px 0 0 0; //stupid fixed nav getting in my way
+        padding: 40px 0 0 0; //stupid fixed nav getting in my way
+        
+        &:first-of-type {
+            padding-top: 80px;
+        }
                 
         h2 {
             font-size: ceil(($font-size-base * $scale-x3));
@@ -325,21 +341,19 @@ main {
 
 footer {
     background: #000;
-    color: $gray;
+    color: $gray-light;
     padding: 2em 0 0 0;
     position: relative;
     
     p {
-        padding: 0 170px 1em 0;
+        padding: 0 0 1em 0;
     }
     
     img {
         display: block;
         width: 150px;
         height: 200px;
-        position: absolute;
-        bottom: 0px;
-        right: 0px;
+        float: right;
     }
 }
 
@@ -368,11 +382,23 @@ footer {
             
             p {
                 display: block;
+                height: auto;
+                opacity: 1;
                 float: left;
                 padding: 0 0 0 30px;
                 font-size: $font-size-base * $scale-x6;
+                -webkit-transition: none;
+                -moz-transition: none;
+                transition: none;
             }
         } //.navbar-brand
+        
+        &.navbar-shrink {
+            p {
+                height: auto;
+                opacity: 1;
+            }
+        }
         
         nav {
             width: auto;
@@ -516,6 +542,25 @@ footer {
             }
         }
     } 
+    
+footer {
+    color: $gray-light;
+    padding: 2em 0 0 0;
+    position: relative;
+    
+    p {
+        padding: 0 170px 1em 0;
+    }
+    
+    img {
+        display: block;
+        width: 150px;
+        height: 200px;
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+    }
+}
 
 } // end big screens
 
