@@ -17,6 +17,13 @@ var cbpAnimatedHeader = (function() {
                 setTimeout( scrollPage, 250 );
             }
         }, false );
+        
+        window.addEventListener( 'touchmove', function( event ) {
+            if( !didScroll ) {
+                didScroll = true;
+                setTimeout( scrollPage, 250 );
+            }
+        }, false );
     }
  
     function scrollPage() {
