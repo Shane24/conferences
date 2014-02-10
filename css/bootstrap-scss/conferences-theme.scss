@@ -220,6 +220,7 @@ header.navbar {
     nav {
         clear: both;
         margin: 0;
+        padding-bottom: 15px;
         float: none;
         width: 100%;
         background-color: #000;
@@ -229,14 +230,13 @@ header.navbar {
             width: 100%;
             margin: 0;
             background-color: #000;
-            width: auto;
             @include box-shadow(2px 2px 2px rgba(0,0,0,.5));
         
             li {
                 display: block;
                 float: left;
                 font-size: $font-size-base;
-                border: 1px solid $gray;
+                border: 1px solid $gray-dark;
                 margin: 0;
                 padding: 0;
                 width: 32%;
@@ -475,6 +475,10 @@ footer {
             display: block;
             padding: 150px 0 0 0; //stupid fixed nav getting in my way
             opacity: 0.7;
+            
+            &:first-of-type {
+                padding-top: 150px;
+            }
             
             &:hover {
                 opacity: 1;

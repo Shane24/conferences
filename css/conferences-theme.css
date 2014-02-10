@@ -221,6 +221,7 @@ header.navbar {
   header.navbar nav {
     clear: both;
     margin: 0;
+    padding-bottom: 15px;
     float: none;
     width: 100%;
     background-color: #000; }
@@ -229,14 +230,13 @@ header.navbar {
       width: 100%;
       margin: 0;
       background-color: #000;
-      width: auto;
       -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
       box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5); }
       header.navbar nav .navbar-nav li {
         display: block;
         float: left;
         font-size: 15px;
-        border: 1px solid #555555;
+        border: 1px solid #333333;
         margin: 0;
         padding: 0;
         width: 32%; }
@@ -415,6 +415,8 @@ footer {
         display: table; }
       main .month:after {
         clear: both; }
+      main .month:first-of-type {
+        padding-top: 150px; }
       main .month:hover {
         opacity: 1; }
       main .month h2 {
