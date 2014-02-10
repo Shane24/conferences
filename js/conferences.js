@@ -19,6 +19,7 @@ var cbpAnimatedHeader = (function() {
         }, false );
         
         window.addEventListener( 'touchmove', function( event ) {
+            alert("hi");
             if( !didScroll ) {
                 didScroll = true;
                 setTimeout( scrollPage, 250 );
