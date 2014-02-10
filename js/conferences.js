@@ -18,11 +18,10 @@ var cbpAnimatedHeader = (function() {
             }
         }, false );
         
-        window.addEventListener( 'touchmove', function( event ) {
-            alert("hi");
+        window.addEventListener( 'touchmove', function( event ) { // added for iOS scroll detection
             if( !didScroll ) {
                 didScroll = true;
-                setTimeout( scrollPage, 250 );
+                setTimeout( scrolliOS, 250 );
             }
         }, false );
     }
@@ -37,10 +36,28 @@ var cbpAnimatedHeader = (function() {
         }
         didScroll = false;
     }
- 
+    
     function scrollY() {
         return window.pageYOffset || docElem.scrollTop;
     }
+
+    // next 2 functions added for iOS scroll detection     
+    
+    function scrolliOS() { 
+        var sy = scrollYiOS();
+        if ( sy >= changeHeaderOn ) {
+            classie.add( header, 'navbar-shrink' );
+        }
+        else {
+            classie.remove( header, 'navbar-shrink' );
+        }
+        didScroll = false;
+    }
+    
+    function scrollYiOS() { 
+        return document.body.scrollTop;
+    }
+
  
     init();
  
