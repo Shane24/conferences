@@ -1,7 +1,8 @@
-/*
-// Thanks to http://tympanus.net/codrops/2013/06/06/on-scroll-animated-header/ for the JS below
-// CSS references modified to suit needs
-*/
+$(function() {                       
+    $( "nav ul li a" ).click(function() {
+      $( ".navbar-collapse" ).toggle();
+    });
+}); // Collapse nav once menu item is clicked
 
 var cbpAnimatedHeader = (function() {
  
