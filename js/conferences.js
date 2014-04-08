@@ -4,6 +4,12 @@ $(function() {
     });
 }); // Collapse nav once menu item is clicked
 
+$(function() {                       
+    $( ".navbar-header button" ).click(function() {
+      $( ".navbar-collapse" ).toggle();
+    });
+});
+
 var cbpAnimatedHeader = (function() {
  
     var docElem = document.documentElement,
