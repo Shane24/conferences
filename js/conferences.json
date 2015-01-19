@@ -1,0 +1,25 @@
+{
+  "conferences": {
+    "month": "February",
+    "events": [
+      {
+          "title": "The Big Conference",
+          "url": "www.cloudsteph.com",
+          "location": "Cool Location",
+          "dates": "5 - 8 February"
+      },
+      {
+          "title": "Another Conference",
+          "url": "www.cloudsteph.com",
+          "location": "Cool Location",
+          "dates": "5 - 8 February"
+      },
+      {
+          "title": "Conference 3",
+          "url": "www.cloudsteph.com",
+          "location": "Cool Location",
+          "dates": "5 - 8 February"
+      }
+    ]
+  }
+}

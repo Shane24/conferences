@@ -69,3 +69,22 @@ var cbpAnimatedHeader = (function() {
     init();
  
 })();
+
+angular.module('confApp', [])
+  .controller('confCtrl', ['$scope', '$http', function($scope, $http) {
+      $scope.conf_items;
+      $http.get('js/conferences.json').success(function(data) {
+      		$scope.conf_items = data;
+      });
+  /*    
+	$scope.addToDo = function() {	
+		$scope.todo_items.push({'title': $scope.newTodo, 'done': false})
+		$scope.newTodo = ''; // this is resetting the content of the input field to nothing
+	};
+	$scope.removeToDo = function() {
+		$scope.todo_items = $scope.todo_items.filter(function(item) {
+			return !item.done;
+		});
+	};
+	*/
+}]);
