@@ -21,21 +21,5 @@
           "dates": "5 - 8 February"
       }
     ],
-    
-    "month": "February",
-    "events": [
-      {
-          "title": "Another Conf333erence",
-          "url": "www.cloudsteph.com",
-          "location": "Cool Location",
-          "dates": "5 - 8 February"
-      },
-      {
-          "title": "Conferen4444ce 3",
-          "url": "www.cloudsteph.com",
-          "location": "Cool Location",
-          "dates": "5 - 8 February"
-      }
-    ]
   }
 }
