@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Conferences for web designers & developers in 2014">
+<meta name="description" content="Conferences for web designers & developers in 2015">
 
 <title>Much Conferenc.es</title>
 
@@ -57,18 +57,18 @@
 
         <nav role="navigation" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#january">Jan</a></li>
-            <li><a href="#february">Feb</a></li>
-            <li><a href="#march">Mar</a></li>
-            <li><a href="#april">Apr</a></li>
-            <li><a href="#may">May</a></li>
-            <li><a href="#june">June</a></li>
-            <li><a href="#july">July</a></li>
-            <li><a href="#august">Aug</a></li>
-            <li><a href="#september">Sept</a></li>
-            <li><a href="#october">Oct</a></li>
-            <li><a href="#november">Nov</a></li>
-            <li><a href="#december">Dec</a></li>
+            <li><a href="#January">Jan</a></li>
+            <li><a href="#February">Feb</a></li>
+            <li><a href="#March">Mar</a></li>
+            <li><a href="#April">Apr</a></li>
+            <li><a href="#May">May</a></li>
+            <li><a href="#June">June</a></li>
+            <li><a href="#July">July</a></li>
+            <li><a href="#August">Aug</a></li>
+            <li><a href="#September">Sept</a></li>
+            <li><a href="#October">Oct</a></li>
+            <li><a href="#November">Nov</a></li>
+            <li><a href="#December">Dec</a></li>
             <li><a href="#why">Why?</a></li>
           </ul>
         </nav>
@@ -78,14 +78,416 @@
     <div class="container" ng-controller="confCtrl">
         <div class="row">
         <div class="col-md-12">
-          <section class="month">
-            <h2>Happy 2015!</h2>
-            <div class="conferences">
-              <p>To our surprise, we've had a few enquiries about whether or not there will be a list of 2015 conferences. We're currently working on a more maintainable and, well, sensible solution.</p>
-              <p>We still love Doge too so we're keeping him. Her? Sorry Doge.</p>
-              <p>Hold tight, it's shipping real soon. </p>
-            </div>
-          </section>
+
+          
+            <section class="month" ng-repeat="months in conf_items" id="{{months.month}}">
+              <h2>{{months.month}}</h2>
+              <div class="conferences">
+                <div class="conference" ng-repeat="event in months.events">
+                  <h3><a href="http://{{event.url}}" target="_blank">{{event.title}}</a></h3>
+                  <ul>
+                    <li>{{event.location}}</li>
+                    <li>{{event.dates}}</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
+            
+            <section class="month">
+              <h2>Coming soon...</h2>
+              <div class="conferences">
+                <div class="conference">
+                  <p>We're currently updating the list with details of all the 2015 conferences we can find. Remember, if you have any you'd like to add either ping us at <a href="http://www.twitter.com/muchconferences">@muchconferences</a> or head to <a href="https://github.com/shane24/conferences">Github</a> and add it there.</p>
+                </div>
+              </div>
+            </section>
+
+<!--
+
+            <section class="month" id="may">
+                <h2>May</h2>
+                <div class="conferences">
+                <div class="conference">
+                    <h3><a href="http://artifactconf.com">Artifact</a></h3>
+                    <ul>
+                        <li>Boston </li>
+                        <li>5 - 7 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://aneventapart.com/events">An Event Apart</a></h3>
+                    <ul>
+                        <li>San Diego </li>
+                        <li>12- 14 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://typotalks.com/berlin">TYPO Roots</a></h3>
+                    <ul>
+                        <li>Berlin </li>
+                        <li>13 - 17 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://ux-intensive.com/">UX Intensive</a></h3>
+                    <ul>
+                        <li>Dublin </li>
+                        <li>13 - 16 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://uxpaboston.org/events/user-experience-conference-2014/">UXPA Boston</a></h3>
+                    <ul>
+                        <li>Boston</li>
+                        <li>15 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://artifactconf.com">jQuery UK</a></h3>
+                    <ul>
+                        <li>Oxford, UK </li>
+                        <li>16 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://govservicedesign.net/">Service Design in Government</a></h3>
+                    <ul>
+                        <li>London</li>
+                        <li>19 - 20 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://ux14.gomodev.com/">modev UX</a></h3>
+                    <ul>
+                        <li>Mclean, Virginia, U.S.A.</li>
+                        <li>19 - 20 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://2014.cssconf.com">CSS Conf Florida</a></h3>
+                    <ul>
+                        <li>Florida </li>
+                        <li>27 May </li>
+                    </ul>
+                </div> 
+                <div class="conference">
+                    <h3><a href="http://2014.beyondtellerrand.com">beyond tellerrand</a></h3>
+                    <ul>
+                        <li>D&uuml;sseldorf </li>
+                        <li>19 - 21 May </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://2014.uxlondon.com">UX London</a></h3>
+                    <ul>
+                        <li>London </li>
+                        <li>28 - 30 May </li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            
+            <section class="month" id="june">
+                <h2>June</h2>
+                <div class="conferences">
+                <div class="conference">
+                    <h3><a href="http://2014.kerning.it/">Kerning</a></h3>
+                    <ul>
+                        <li>Faenza, Italy</li>
+                        <li>5 - 6 June </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://valiocon.com/">Valio</a></h3>
+                    <ul>
+                        <li>San Diego </li>
+                        <li>5 - 8 June </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://www.uxcampeurope.org/">UXcamp Europe</a></h3>
+                    <ul>
+                        <li>Berlin</li>
+                        <li>7 - 8 June </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://smashingconf.com/ny-2014/">Smashing Conf NYC</a></h3>
+                    <ul>
+                        <li>New York City </li>
+                        <li>17 - 18 June </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://uxscotland.net/">UX Scotland</a></h3>
+                    <ul>
+                        <li>Edinburgh, Scotland</li>
+                        <li>19 - 20 June </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://www.generateconf.com/">GenerateConf (NYC)</a></h3>
+                    <ul>
+                        <li>New York</li>
+                        <li>20 June </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://truenorthconf.org">True North</a></h3>
+                    <ul>
+                        <li>Stockholm </li>
+                        <li>26 - 29 June </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://responsiveconf.com/">Responsive Day Out 2</a></h3>
+                    <ul>
+                        <li>Brighton, UK</li>
+                        <li>27 June </li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            
+            <section class="month" id="july">
+                <h2>July</h2>
+                <div class="conferences">
+                <div class="conference">
+                    <h3><a href="http://aneventapart.com/events">An Event Apart</a></h3>
+                    <ul>
+                        <li>Washington DC </li>
+                        <li>21 - 23 July </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://www.uxpa2014.org/">UXPA London</a></h3>
+                    <ul>
+                        <li>London</li>
+                        <li>21 - 24 July </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://bdconf.com/events">Beyond The Desktop</a></h3>
+                    <ul>
+                        <li>Nashville </li>
+                        <li>28 - 30 July </li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+
+            <section class="month" id="august">
+                <h2>August</h2>
+                <div class="conferences">
+                <div class="conference">
+                    <h3><a href="https://distill.engineyard.com/">Distill</a></h3>
+                    <ul>
+                        <li>San Francisco</li>
+                        <li>7 - 8 August </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://hybridconf.net">Hybrid Conf</a></h3>
+                    <ul>
+                        <li>Stockholm</li>
+                        <li>21 - 22 August </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://aneventapart.com/events">An Event Apart</a></h3>
+                    <ul>
+                        <li>Chicago </li>
+                        <li>25 - 27 August </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://uxaustralia.com.au/uxaustralia-2014">UX Australia</a></h3>
+                    <ul>
+                        <li>Sydney </li>
+                        <li>26 - 29 August </li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            
+            <section class="month" id="september">
+                <h2>September</h2>
+                <div class="conferences">
+                <div class="conference">
+                    <h3><a href="http://reasons.to/">Reasons to be Creative</a></h3>
+                    <ul>
+                        <li>Brighton, UK</li>
+                        <li>1 - 3 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://2014.dconstruct.org/conference/">dConstruct</a></h3>
+                    <ul>
+                        <li>Brighton, UK</li>
+                        <li>5 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://uxweek.com">UX Week</a></h3>
+                    <ul>
+                        <li>San Francisco </li>
+                        <li>9 - 12 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://2014.xoxofest.com/">XOXO</a></h3>
+                    <ul>
+                        <li>Portland</li>
+                        <li>11 - 14 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://2014.cssconf.eu/">CSSConf EU</a></h3>
+                    <ul>
+                        <li>Berlin</li>
+                        <li>12 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://2014.fromthefront.it/">From the Front</a></h3>
+                    <ul>
+                        <li>Bologna, Italy</li>
+                        <li>18 - 19 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://2014.dareconf.com">Dare</a></h3>
+                    <ul>
+                        <li>London </li>
+                        <li>22 - 23 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://aneventapart.com/events">An Event Apart</a></h3>
+                    <ul>
+                        <li>Austin </li>
+                        <li>22 - 24 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://www.generateconf.com/">Generate Conf</a></h3>
+                    <ul>
+                        <li>London </li>
+                        <li>26 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://www.euroia.org/">euroia 2014</a></h3>
+                    <ul>
+                        <li>Brussels </li>
+                        <li>25 - 27 September </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://artifactconf.com">Artifact East</a></h3>
+                    <ul>
+                        <li>Rhode Island </li>
+                        <li>29 September - 01 October </li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            
+            <section class="month" id="october">
+                <h2>October</h2>
+                <div class="conferences">
+                <div class="conference">
+                    <h3><a href="http://www.frontendlondon.co.uk/one-day.html">Front-end London One Day</a></h3>
+                    <ul>
+                        <li>4 October </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="https://brooklynbeta.org/2014">Brooklyn Beta</a></h3>
+                    <ul>
+                        <li>10 October </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://fronteers.nl/congres/2014">Fronteers</a></h3>
+                    <ul>
+                        <li>Amsterdam </li>
+                        <li>10 - 11 October </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://push-conference.com/2014/">push.conference</a></h3>
+                    <ul>
+                        <li>Munich</li>
+                        <li>10 - 11 October </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://ux-intensive.com">UX Intensive</a></h3>
+                    <ul>
+                        <li>Brooklyn </li>
+                        <li>13 - 16 October </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://www.hikecon.com">Hike</a></h3>
+                    <ul>
+                        <li>Chicago</li>
+                        <li>25 October</li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://aneventapart.com/event/orlando-2014">An Event Apart</a></h3>
+                    <ul>
+                        <li>Orlando</li>
+                        <li>27 - 29 October</li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="http://theweb.is/">The Web Is</a></h3>
+                    <ul>
+                        <li>Cardiff, Wales</li>
+                        <li>29 - 31 October</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+
+            <section class="month" id="november">
+                <h2>November</h2>
+                <div class="conferences">
+                <div class="conference">
+                    <h3><a href="http://bdconf.com/events">Beyond The Desktop</a></h3>
+                    <ul>
+                        <li>Orlando </li>
+                        <li>03 - 05 November </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="https://twitter.com/breakconf">Break</a></h3>
+                    <ul>
+                        <li>Belfast </li>
+                        <li>12 - 14 November </li>
+                    </ul>
+                </div>
+                <div class="conference">
+                    <h3><a href="https://aneventapart.com/events">An Event Apart</a></h3>
+                    <ul>
+                        <li>San Francisco </li>
+                        <li>17 -19 November </li>
+                    </ul>
+                </div>
+                </div>
+            </section>
+            <section class="month" id="december">
+                <h2>December</h2>
+                <div class="conferences">
+                <div class="conference">
+                    <h3>Nothing found for December just yet!</h3>
+                </div>
+                </div>
+            </section>
+-->
         </div>
     </div>
     </div>
