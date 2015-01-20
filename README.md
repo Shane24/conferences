@@ -1,7 +1,7 @@
 MuchConferenc.es
 ==========
 
-A list of conferences that makers of websites, apps and other digital things might enjoy in 2014. We'll be adding more as we find them and of course tweaking things here and there.
+A list of conferences that makers of websites, apps and other digital things might enjoy in 2015. We'll be adding more as we find them and of course tweaking things here and there.
 
 Built with plain old HTML on the official SASS port of [Bootstrap 3](http://getbootstrap.com/). 
 
