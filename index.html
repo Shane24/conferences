@@ -81,10 +81,10 @@
         <div class="row">
         <div class="col-md-12">
           
-            <section class="month" ng-repeat="month in conf_items" id="{{month.month}}">
-              <h2>{{month.month}}</h2>
+            <section class="month" ng-repeat="months in conf_items" id="{{month.month}}">
+              <h2>{{months.month}}</h2>
               <div class="conferences">
-                <div class="conference" ng-repeat="event in month.events">
+                <div class="conference" ng-repeat="event in months.events">
                   <h3><a href="http://{{event.url}}" target="_blank">{{event.title}}</a></h3>
                   <ul>
                     <li>{{event.location}}</li>
