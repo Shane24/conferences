@@ -7,6 +7,12 @@
           "url": "www.conveyux.com",
           "location": "Seattle",
           "dates": "22 - 24 January"
+      },
+      {
+          "title": "ConfConf",
+          "url": "www.conf-conf.com",
+          "location": "Birmingham",
+          "dates": "30 January - 2 February"
       }
     ]
   },
@@ -20,10 +26,22 @@
           "dates": "9 - 11 February"
       },
       {
+          "title": "UX Salon 2015",
+          "url": "2015.uxsalon.com/",
+          "location": "Tel-Aviv",
+          "dates": "10 - 11 February"
+      },
+      {
           "title": "An Event Apart",
-          "url": "aneventapart.com/",
+          "url": "aneventapart.com",
           "location": "Atlanta",
           "dates": "16 - 18 February"
+      },
+      {
+          "title": "Webstock",
+          "url": "www.webstock.org.nz/15/",
+          "location": "Wellington, New Zealand",
+          "dates": "16 - 20 February"
       },
       {
           "title": "Reasons:London",
@@ -32,10 +50,28 @@
           "dates": "20 February"
       },
       {
+          "title": "TOCA ME design conference",
+          "url": "www.toca-me.com/",
+          "location": "Munich",
+          "dates": "21 February"
+      },
+      {
+          "title": "FITC Amsterdam",
+          "url": "fitc.ca/event/am15/",
+          "location": "Amsterdam",
+          "dates": "23 - 24 February"
+      },
+      {
           "title": "AWWWARDS",
           "url": "conference.awwwards.com/",
           "location": "Barcelona",
           "dates": "24 - 25 February"
+      },
+      {
+          "title": "UX Riga",
+          "url": "www.uxriga.lv/",
+          "location": "Riga, Latvia",
+          "dates": "26 February"
       }
     ]
   },
@@ -67,6 +103,12 @@
           "dates": "17 - 18 March"
       },
       {
+          "title": "Service Design in Government 2015",
+          "url": "www.govservicedesign.net/",
+          "location": "London",
+          "dates": "19 - 20 March"
+      },
+      {
           "title": "CSS Conf",
           "url": "2015.cssconf.com.au/",
           "location": "Melbourne",
@@ -90,16 +132,52 @@
     "month": "April",
     "events": [
       {
+          "title": "WebVisions NYC",
+          "url": "www.webvisionsevent.com/new-york/",
+          "location": "New York City",
+          "dates": "2 - 3 April"
+      },
+      {
+          "title": "DotYork",
+          "url": "dotyork.com/conference",
+          "location": "York, England",
+          "dates": "9 April"
+      },
+      {
+          "title": "FITC Toronto",
+          "url": "fitc.ca/event/to15/",
+          "location": "Toronto",
+          "dates": "12 - 14 April"
+      },
+      {
           "title": "UX Mobile Immersion",
           "url": "uxim15.uie.com",
           "location": "Salt Lake City",
           "dates": "13 - 15 April"
       },
       {
+          "title": "Yggdrasil",
+          "url": "yggdrasilkonferansen.no/",
+          "location": "Sandefjord, Norway",
+          "dates": "14 - 15 April"
+      },
+      {
+          "title": "ConvergeSE",
+          "url": "convergese.com/",
+          "location": "Columbia, South Carolina",
+          "dates": "15 - 18 April"
+      },
+      {
           "title": "Lean UX NYC",
           "url": "2015.leanuxnyc.co/",
           "location": "New York City",
           "dates": "15 - 19 April"
+      },
+      {
+          "title": "Generate New York",
+          "url": "www.generateconf.com/new-york-2015",
+          "location": "New York City",
+          "dates": "17 April"
       },
       {
           "title": "Fluent",
@@ -114,10 +192,22 @@
           "dates": "22 April"
       },
       {
+          "title": "IA Summit",
+          "url": "2015.iasummit.org/",
+          "location": "Minneapolis, USA",
+          "dates": "22 - 26 April"
+      },
+      {
           "title": "Future of Web Design",
           "url": "www.futureofwebdesign.com",
           "location": "London",
           "dates": "27 - 29 April"
+      },
+      {
+          "title": "SmashingConf LA",
+          "url": "www.smashingconf.com/",
+          "location": "Los Angeles",
+          "dates": "28 - 29 April"
       },
       {
           "title": "TYPO focus",
@@ -125,6 +215,30 @@
           "location": "San Francisco",
           "dates": "30 April - 1 May"
       }
+    ]
+  },
+  {
+    "month": "May",
+    "events": [
+      {
+        "title": "UX London",
+        "url": "2015.uxlondon.com",
+        "location": "London",
+        "dates": "20 - 22 May"
+      }
+      
+    ]
+  },
+  {
+    "month": "June",
+    "events": [
+      {
+        "title": "Kerning",
+        "url": "2015.kerning.it",
+        "location": "Faenza, Italy",
+        "dates": "3 - 5 June"
+      }
+      
     ]
   }
 ]
