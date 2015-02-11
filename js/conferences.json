@@ -79,6 +79,30 @@
     "month": "March",
     "events": [
       {
+          "title": "Mobile World Congress",
+          "url": "mobileworldcongress.com/",
+          "location": "Barcelona, Spain",
+          "dates": "2 March - 5 March"
+      },
+      {
+          "title": "QCon London",
+          "url": "qconlondon.com/",
+          "location": "London, England",
+          "dates": "2 March - 6 March"
+      },
+      {
+          "title": "Confab Government",
+          "url": "confabevents.com/events/government",
+          "location": "Washington, DC, USA",
+          "dates": "3 March"
+      },
+      {
+          "title": "ng-conf 2015",
+          "url": "ng-conf.org/",
+          "location": "Salt lake City, USA",
+          "dates": "4 March - 6 March"
+      },
+      {
           "title": "jQuery UK",
           "url": "jqueryuk.com/2015",
           "location": "Oxford",
@@ -95,6 +119,12 @@
           "url": "uxhongkong.com",
           "location": "Hong Kong",
           "dates": "6 - 7 March"
+      },
+      {
+          "title": "onGamestart 2015",
+          "url": "ongamestart.com/",
+          "location": "Warsaw, Poland",
+          "dates": "11 - 13 March"
       },
       {
           "title": "Smashing Conference",
@@ -237,8 +267,77 @@
         "url": "2015.kerning.it",
         "location": "Faenza, Italy",
         "dates": "3 - 5 June"
+      },
+      {
+        "title": "User Experience Lisbon 2015",
+        "url": "ux-lx.com/",
+        "location": "Lisbon, Portugal",
+        "dates": "3 - 5 June"
+      },
+      {
+        "title": "UX LAusanne",
+        "url": "2015.uxlausanne.com/",
+        "location": "Lausanne, Switzerland",
+        "dates": "3 - 5 June"
+      },
+      {
+        "title": "webinale",
+        "url": "webinale.de/2015/",
+        "location": "Berlin, Germany",
+        "dates": "7 - 10 June"
+      },
+      {
+        "title": "An Event Apart San Diego",
+        "url": "aneventapart.com/event/san-diego-2015",
+        "location": "San Diego, USA",
+        "dates": "8 - 10 June"
+      },
+      {
+        "title": "UX Scotland",
+        "url": "cssday.nl/",
+        "location": "Amsterdam, Netherlands",
+        "dates": "12 June"
+      },
+      {
+        "title": "CSSDay",
+        "url": "uxscotland.net/2015/",
+        "location": "Edinburgh, Scotland",
+        "dates": "10 - 12 June"
+      },
+      {
+        "title": "SmashingConf New York 2015",
+        "url": "smashingconf.com/",
+        "location": "New York, USA",
+        "dates": "15 - 18 June"
+      },
+      {
+        "title": "BDConf",
+        "url": "bdconf.com/",
+        "location": "Nashville, USA",
+        "dates": "19 - 20 June"
       }
-      
+    ]
+  },
+  {
+    "month": "August",
+    "events": [
+      {
+        "title": "Design & Content Conference",
+        "url": "designcontentconf.com",
+        "location": "Vancouver, Canada",
+        "dates": "5 - 7 August"
+      }
+    ]
+  },
+  {
+    "month": "August",
+    "events": [
+      {
+        "title": "An Event Apart Washington",
+        "url": "aneventapart.com/event/washington-dc-2015",
+        "location": "Washington DC, USA",
+        "dates": "10 - 12 August"
+      }
     ]
   }
 ]
