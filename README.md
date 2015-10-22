@@ -10,3 +10,6 @@ Want to contribute or tell us about your wonderful upcoming conference? Fork awa
 See you at the coffee stand.
 
 [@cloudsteph](http://www.twitter.com/cloudsteph) & [@IamSMoloney](http://www.twitter.com/IamSMoloney).
+
+### Licence
+MIT
